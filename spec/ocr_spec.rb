@@ -1,7 +1,5 @@
 require 'ocr'
-require 'simplecov'
-
-SimpleCov.start
+require 'spec_helper'
 
 describe Ocr do
 
