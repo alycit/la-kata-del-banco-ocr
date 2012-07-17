@@ -1,5 +1,5 @@
-require 'ocr'
 require 'spec_helper'
+require 'ocr'
 
 describe Ocr do
 
