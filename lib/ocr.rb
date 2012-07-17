@@ -5,14 +5,18 @@ class Ocr
   include ConversionConstants
 
   def process_file(file_name)
-    account_number = []
+    all_account_numbers = []
+
     (File.open(file_name).readlines.collect{ |line| line.chomp }).each_slice(4) do |set|
+       account_number = []
        set.pop
        (set.collect!{ |line| break_line line }).transpose.join.chars.each_slice(9) do |digit|
          account_number << ConversionConstants::CONVERSION_MAP[digit.join]
        end
+       all_account_numbers << account_number.join
     end
-    account_number.join
+
+    all_account_numbers
   end
 
   private
