@@ -11,7 +11,7 @@ class Ocr
        account_number = []
        set.pop
        (set.collect!{ |line| break_line line }).transpose.join.chars.each_slice(9) do |digit|
-         account_number << ConversionConstants::CONVERSION_MAP[digit.join]
+         account_number << CONVERSION_MAP[digit.join]
        end
        all_account_numbers << account_number.join
     end
