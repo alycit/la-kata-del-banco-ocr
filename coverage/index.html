@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-17T18:10:04-04:00">2012-07-17T18:10:04-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-17T18:27:51-04:00">2012-07-17T18:27:51-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,15 +34,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.45
+         6.35
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>19</b> relevant lines. 
-    <span class="green"><b>19</b> lines covered</span> and
+    <b>20</b> relevant lines. 
+    <span class="green"><b>20</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,9 +62,9 @@
       <tr>
         <td class="strong"><a href="#95720fcf50fbeabddce15c0b7edc9e341b698705" class="src_link" title="lib/conversion_constants.rb">lib/conversion_constants.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>4</td>
-        <td>4</td>
+        <td>19</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -76,7 +76,7 @@
         <td>15</td>
         <td>15</td>
         <td>0</td>
-        <td>7.9</td>
+        <td>11.7</td>
       </tr>
       
     </tbody>
@@ -100,8 +100,8 @@
     <h3>lib/conversion_constants.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -166,28 +166,58 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  CONVERSION_MAP = {</code>
+          <code class="ruby">  TWO = &quot; _ &quot; +</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">    ZERO =&gt; 0,</code>
+          <code class="ruby">	&quot; _|&quot; +</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">    ONE =&gt; 1</code>
+          <code class="ruby">	&quot;|_ &quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  CONVERSION_MAP = {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    ZERO =&gt; 0,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    ONE =&gt; 1,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    TWO =&gt; 2</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
           <code class="ruby">  } </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
@@ -241,32 +271,32 @@
           <code class="ruby">  def process_file(file_name)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
           <code class="ruby">    account_number = []</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="7">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="15" data-linenumber="7">
+          <span class="hits">15</span>
           
           <code class="ruby">    (File.open(file_name).readlines.collect{ |line| line.chomp }).each_slice(4) do |set|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
           
           <code class="ruby">       set.pop</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="9">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="12" data-linenumber="9">
+          <span class="hits">12</span>
           
           <code class="ruby">       (set.collect!{ |line| break_line line }).transpose.join.chars.each_slice(9) do |digit|</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="10">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="27" data-linenumber="10">
+          <span class="hits">27</span>
           
           <code class="ruby">         account_number &lt;&lt; ConversionConstants::CONVERSION_MAP[digit.join]</code>
         </li>
@@ -283,8 +313,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="13">
+          <span class="hits">3</span>
           
           <code class="ruby">    account_number.join</code>
         </li>
@@ -313,20 +343,20 @@
           <code class="ruby">  def break_line(line)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="18">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="18">
+          <span class="hits">9</span>
           
           <code class="ruby">    broken_line = []</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="19">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="19">
+          <span class="hits">9</span>
           
           <code class="ruby">    line.chars.each_slice(3) do |three_chars|</code>
         </li>
       
-        <li class="covered" data-hits="54" data-linenumber="20">
-          <span class="hits">54</span>
+        <li class="covered" data-hits="81" data-linenumber="20">
+          <span class="hits">81</span>
           
           <code class="ruby">      broken_line &lt;&lt; three_chars</code>
         </li>
@@ -337,8 +367,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="22">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="22">
+          <span class="hits">9</span>
           
           <code class="ruby">    broken_line</code>
         </li>
