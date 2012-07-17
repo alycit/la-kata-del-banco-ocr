@@ -1,7 +1,9 @@
 require 'conversion_constants'
 
 class Ocr
-  
+
+  include ConversionConstants
+
   def process_file(file_name)
     account_number = []
     (File.open(file_name).readlines.collect{ |line| line.chomp }).each_slice(4) do |set|
