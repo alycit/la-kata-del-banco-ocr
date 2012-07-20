@@ -19,7 +19,7 @@ class AccountNumber
   end
   
   def valid?
-    true
+    checksum == 0
   end
   
   private
@@ -30,5 +30,9 @@ class AccountNumber
       broken_line << three_chars
     end
     broken_line
+  end
+  
+  def checksum
+    return 0
   end
 end

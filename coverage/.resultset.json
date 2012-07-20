@@ -35,6 +35,10 @@
         null,
         63,
         null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/alycit/Projects/la-kata-del-banco-ocr/lib/conversion_constants.rb": [
@@ -172,6 +176,6 @@
         null
       ]
     },
-    "timestamp": 1342754288
+    "timestamp": 1342754612
   }
 }
