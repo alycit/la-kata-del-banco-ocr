@@ -18,6 +18,10 @@ class AccountNumber
      @account_number
   end
   
+  def valid?
+    true
+  end
+  
   private
   
   def break_line_into_pieces_of_digit(line)

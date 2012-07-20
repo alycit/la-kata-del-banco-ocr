@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-19T22:50:30-04:00">2012-07-19T22:50:30-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-19T23:18:08-04:00">2012-07-19T23:18:08-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,15 +34,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         21.73
+         20.05
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>61</b> relevant lines. 
-    <span class="green"><b>61</b> lines covered</span> and
+    <b>63</b> relevant lines. 
+    <span class="green"><b>63</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,11 +62,11 @@
       <tr>
         <td class="strong"><a href="#bb4ded42804ad4c3d2ee43b471892c6bd6628b22" class="src_link" title="lib/account_number.rb">lib/account_number.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>30</td>
-        <td>17</td>
-        <td>17</td>
+        <td>34</td>
+        <td>19</td>
+        <td>19</td>
         <td>0</td>
-        <td>64.8</td>
+        <td>58.1</td>
       </tr>
       
       <tr>
@@ -120,8 +120,8 @@
     <h3>lib/account_number.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>17</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -252,58 +252,82 @@
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def valid?</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">  def break_line_into_pieces_of_digit(line)</code>
+          <code class="ruby">    true</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="24">
-          <span class="hits">63</span>
-          
-          <code class="ruby">    broken_line = []</code>
-        </li>
-      
-        <li class="covered" data-hits="63" data-linenumber="25">
-          <span class="hits">63</span>
-          
-          <code class="ruby">    line.chars.each_slice(3) do |three_chars|</code>
-        </li>
-      
-        <li class="covered" data-hits="567" data-linenumber="26">
-          <span class="hits">567</span>
-          
-          <code class="ruby">      broken_line &lt;&lt; three_chars</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="covered" data-hits="63" data-linenumber="28">
-          <span class="hits">63</span>
-          
-          <code class="ruby">    broken_line</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def break_line_into_pieces_of_digit(line)</code>
+        </li>
+      
+        <li class="covered" data-hits="63" data-linenumber="28">
+          <span class="hits">63</span>
+          
+          <code class="ruby">    broken_line = []</code>
+        </li>
+      
+        <li class="covered" data-hits="63" data-linenumber="29">
+          <span class="hits">63</span>
+          
+          <code class="ruby">    line.chars.each_slice(3) do |three_chars|</code>
+        </li>
+      
+        <li class="covered" data-hits="567" data-linenumber="30">
+          <span class="hits">567</span>
+          
+          <code class="ruby">      broken_line &lt;&lt; three_chars</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="63" data-linenumber="32">
+          <span class="hits">63</span>
+          
+          <code class="ruby">    broken_line</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">end</code>
