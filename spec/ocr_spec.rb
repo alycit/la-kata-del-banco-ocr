@@ -56,5 +56,6 @@ describe Ocr do
      								   '999999999',
       								   '123456789']
   end
+  
 end
 
