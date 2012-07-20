@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-19T22:34:44-04:00">2012-07-19T22:34:44-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-19T22:50:30-04:00">2012-07-19T22:50:30-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,15 +34,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         21.1
+         21.73
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>62</b> relevant lines. 
-    <span class="green"><b>62</b> lines covered</span> and
+    <b>61</b> relevant lines. 
+    <span class="green"><b>61</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,11 +62,11 @@
       <tr>
         <td class="strong"><a href="#bb4ded42804ad4c3d2ee43b471892c6bd6628b22" class="src_link" title="lib/account_number.rb">lib/account_number.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>31</td>
-        <td>18</td>
-        <td>18</td>
+        <td>30</td>
+        <td>17</td>
+        <td>17</td>
         <td>0</td>
-        <td>62.3</td>
+        <td>64.8</td>
       </tr>
       
       <tr>
@@ -120,8 +120,8 @@
     <h3>lib/account_number.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -210,106 +210,100 @@
         <li class="covered" data-hits="21" data-linenumber="14">
           <span class="hits">21</span>
           
-          <code class="ruby">     number = []</code>
-        </li>
-      
-        <li class="covered" data-hits="21" data-linenumber="15">
-          <span class="hits">21</span>
-          
           <code class="ruby">     set_of_lines.pop</code>
         </li>
       
-        <li class="covered" data-hits="84" data-linenumber="16">
+        <li class="covered" data-hits="84" data-linenumber="15">
           <span class="hits">84</span>
           
           <code class="ruby">     set_of_lines.collect!{ |line| break_line_into_pieces_of_digit line }.transpose.join.chars.each_slice(9) do |text_digit_pieces|</code>
         </li>
       
-        <li class="covered" data-hits="189" data-linenumber="17">
+        <li class="covered" data-hits="189" data-linenumber="16">
           <span class="hits">189</span>
           
-          <code class="ruby">        number &lt;&lt; CONVERSION_MAP[text_digit_pieces.join]</code>
+          <code class="ruby">        @account_number &lt;&lt; CONVERSION_MAP[text_digit_pieces.join]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">     end</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="19">
+        <li class="covered" data-hits="21" data-linenumber="18">
           <span class="hits">21</span>
           
-          <code class="ruby">     @account_number = number.join</code>
+          <code class="ruby">     @account_number</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
           <code class="ruby">  def break_line_into_pieces_of_digit(line)</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="25">
+        <li class="covered" data-hits="63" data-linenumber="24">
           <span class="hits">63</span>
           
           <code class="ruby">    broken_line = []</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="26">
+        <li class="covered" data-hits="63" data-linenumber="25">
           <span class="hits">63</span>
           
           <code class="ruby">    line.chars.each_slice(3) do |three_chars|</code>
         </li>
       
-        <li class="covered" data-hits="567" data-linenumber="27">
+        <li class="covered" data-hits="567" data-linenumber="26">
           <span class="hits">567</span>
           
           <code class="ruby">      broken_line &lt;&lt; three_chars</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="29">
+        <li class="covered" data-hits="63" data-linenumber="28">
           <span class="hits">63</span>
           
           <code class="ruby">    broken_line</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
@@ -588,61 +582,61 @@
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">    ZERO  =&gt; 0,</code>
+          <code class="ruby">    ZERO  =&gt; '0',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">    ONE   =&gt; 1,</code>
+          <code class="ruby">    ONE   =&gt; '1',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">    TWO   =&gt; 2,</code>
+          <code class="ruby">    TWO   =&gt; '2',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">    THREE =&gt; 3,</code>
+          <code class="ruby">    THREE =&gt; '3',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">    FOUR  =&gt; 4,</code>
+          <code class="ruby">    FOUR  =&gt; '4',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">    FIVE  =&gt; 5,</code>
+          <code class="ruby">    FIVE  =&gt; '5',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">    SIX   =&gt; 6,</code>
+          <code class="ruby">    SIX   =&gt; '6',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">    SEVEN =&gt; 7,</code>
+          <code class="ruby">    SEVEN =&gt; '7',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    EIGHT =&gt; 8,</code>
+          <code class="ruby">    EIGHT =&gt; '8',</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">    NINE  =&gt; 9</code>
+          <code class="ruby">    NINE  =&gt; '9'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">

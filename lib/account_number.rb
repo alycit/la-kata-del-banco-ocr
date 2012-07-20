@@ -11,12 +11,11 @@ class AccountNumber
   end
   
   def extract_account_number set_of_lines
-     number = []
      set_of_lines.pop
      set_of_lines.collect!{ |line| break_line_into_pieces_of_digit line }.transpose.join.chars.each_slice(9) do |text_digit_pieces|
-        number << CONVERSION_MAP[text_digit_pieces.join]
+        @account_number << CONVERSION_MAP[text_digit_pieces.join]
      end
-     @account_number = number.join
+     @account_number
   end
   
   private
