@@ -17,7 +17,7 @@ task :roodi do
 end
 
 task :flog do
-  system 'find lib -name \*.rb | xargs flog > metrics/flog.txt'
+  system 'find lib -name \*.rb | xargs flog -adg > metrics/flog.txt'
 end
 
 task :flay do
