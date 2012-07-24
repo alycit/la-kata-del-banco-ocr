@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-23T20:44:31-04:00">2012-07-23T20:44:31-04:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-07-23T21:13:45-04:00">2012-07-23T21:13:45-04:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -34,15 +34,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         19.08
+         18.85
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>65</b> relevant lines. 
-    <span class="green"><b>65</b> lines covered</span> and
+    <b>63</b> relevant lines. 
+    <span class="green"><b>63</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -62,11 +62,11 @@
       <tr>
         <td class="strong"><a href="#bb4ded42804ad4c3d2ee43b471892c6bd6628b22" class="src_link" title="lib/account_number.rb">lib/account_number.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>51</td>
-        <td>21</td>
-        <td>21</td>
+        <td>49</td>
+        <td>19</td>
+        <td>19</td>
         <td>0</td>
-        <td>54.2</td>
+        <td>53.3</td>
       </tr>
       
       <tr>
@@ -120,8 +120,8 @@
     <h3>lib/account_number.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -192,7 +192,7 @@
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
@@ -246,7 +246,7 @@
         <li class="covered" data-hits="84" data-linenumber="20">
           <span class="hits">84</span>
           
-          <code class="ruby">     set_of_lines.collect!{ |line| break_line_into_pieces_of_digit line }.transpose.join.chars.each_slice(9) do |text_digit_pieces|</code>
+          <code class="ruby">     set_of_lines.collect!{ |line| AccountNumber::break_line_into_pieces_of_digit line }.transpose.join.chars.each_slice(9) do |text_digit_pieces|</code>
         </li>
       
         <li class="covered" data-hits="189" data-linenumber="21">
@@ -318,118 +318,106 @@
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">  def break_line_into_pieces_of_digit(line)</code>
+          <code class="ruby">  def self.break_line_into_pieces_of_digit(line)</code>
         </li>
       
         <li class="covered" data-hits="63" data-linenumber="33">
           <span class="hits">63</span>
           
-          <code class="ruby">    broken_line = []</code>
+          <code class="ruby">    broken_line = line.chars.each_slice(3).inject([]) do |builder, three_chars|</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="34">
-          <span class="hits">63</span>
-          
-          <code class="ruby">    line.chars.each_slice(3) do |three_chars|</code>
-        </li>
-      
-        <li class="covered" data-hits="567" data-linenumber="35">
+        <li class="covered" data-hits="567" data-linenumber="34">
           <span class="hits">567</span>
           
-          <code class="ruby">      broken_line &lt;&lt; three_chars</code>
+          <code class="ruby">      builder &lt;&lt; three_chars</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="63" data-linenumber="37">
-          <span class="hits">63</span>
-          
-          <code class="ruby">    broken_line</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
           <code class="ruby">  def checksum</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">    (@account_number[0].to_i * 9 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">    @account_number[1].to_i * 8 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">    @account_number[2].to_i * 7 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">    @account_number[3].to_i * 6 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">    @account_number[4].to_i * 5 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">    @account_number[5].to_i * 4 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby">    @account_number[6].to_i * 3 +</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">    @account_number[7].to_i * 2 + </code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="49">
+        <li class="covered" data-hits="12" data-linenumber="47">
           <span class="hits">12</span>
           
           <code class="ruby">    @account_number[8].to_i) % 11</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">end</code>

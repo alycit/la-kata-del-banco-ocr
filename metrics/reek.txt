@@ -1,6 +1,3 @@
-lib/account_number.rb -- 3 warnings:
-  AccountNumber#break_line_into_pieces_of_digit doesn't depend on instance state (UtilityFunction)
-  AccountNumber#break_line_into_pieces_of_digit refers to broken_line more than self (FeatureEnvy)
-  AccountNumber#break_line_into_pieces_of_digit refers to line more than self (FeatureEnvy)
+lib/account_number.rb -- 0 warnings
 lib/conversion_constants.rb -- 0 warnings
 lib/ocr.rb -- 0 warnings
