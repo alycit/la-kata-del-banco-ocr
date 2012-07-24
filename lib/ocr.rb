@@ -1,3 +1,8 @@
+##
+## This class is essentially the controller of the Ocr application
+## It is responsible for taking the file input
+##
+
 class Ocr
   
   def initialize

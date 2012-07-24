@@ -1,3 +1,8 @@
+##
+## This class represents the account number
+## It is responsible for parsing and validating the number
+##
+
 require 'conversion_constants'
 
 class AccountNumber

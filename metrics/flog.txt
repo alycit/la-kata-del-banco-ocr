@@ -1,5 +1,5 @@
    172.4: flog total
     17.2: flog/method average
 
-   101.0: AccountNumber#checksum           lib/account_number.rb:35
+   101.0: AccountNumber#checksum           lib/account_number.rb:40
     24.0: ConversionConstants#none

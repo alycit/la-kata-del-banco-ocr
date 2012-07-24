@@ -2,6 +2,11 @@
   "RSpec": {
     "coverage": {
       "/Users/alycit/Projects/la-kata-del-banco-ocr/lib/account_number.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
         1,
@@ -169,6 +174,11 @@
         null
       ],
       "/Users/alycit/Projects/la-kata-del-banco-ocr/lib/ocr.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         null,
         1,
@@ -184,6 +194,6 @@
         null
       ]
     },
-    "timestamp": 1343090010
+    "timestamp": 1343090671
   }
 }
