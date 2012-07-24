@@ -18,23 +18,23 @@ module ConversionConstants
   FOUR = "   " +
          "|_|" +
          "  |"
-	       
+
   FIVE = " _ " +
          "|_ " +
          " _|"
-	       
+
   SIX = " _ " +
         "|_ " +
         "|_|"
-	      
+
   SEVEN = " _ " +
           "  |" +
           "  |"
-	        
+
   EIGHT = " _ " +
           "|_|" +
           "|_|"
-	        
+
   NINE = " _ " +
          "|_|" +
          " _|"

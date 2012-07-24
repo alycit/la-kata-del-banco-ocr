@@ -11,6 +11,9 @@ class AccountNumber
   
   attr_accessor :account_number
   
+  INITIAL_CHECKSUM_POSITION = 0
+  CHECKSUM_DIVISOR = 11
+  
   def initialize
     @account_number = ""
   end
@@ -24,7 +27,7 @@ class AccountNumber
   end
   
   def valid?
-    checksum == 0
+    checksum(INITIAL_CHECKSUM_POSITION, @account_number.size) == 0
   end
   
   private
@@ -35,15 +38,9 @@ class AccountNumber
     end
   end
   
-  def checksum
-    (@account_number[0].to_i * 9 +
-    @account_number[1].to_i * 8 +
-    @account_number[2].to_i * 7 +
-    @account_number[3].to_i * 6 +
-    @account_number[4].to_i * 5 +
-    @account_number[5].to_i * 4 +
-    @account_number[6].to_i * 3 +
-    @account_number[7].to_i * 2 + 
-    @account_number[8].to_i) % 11
+  def checksum(position, multiplier)
+    char_as_digit = @account_number[position].to_i
+    return char_as_digit if multiplier == 0
+    ((char_as_digit * multiplier) + checksum(position + 1, multiplier - 1)) % CHECKSUM_DIVISOR
   end
 end

@@ -1,13 +1,13 @@
-   176.5: flog total
-    17.6: flog/method average
+    92.8: flog total
+     9.3: flog/method average
 
-   137.2: AccountNumber total
-   101.0: AccountNumber#checksum           lib/account_number.rb:38
-    17.9: AccountNumber#extract_account_number lib/account_number.rb:18
-     9.5: AccountNumber::break_line_into_pieces_of_digit lib/account_number.rb:32
-     4.8: AccountNumber#none
-     2.8: AccountNumber#valid?             lib/account_number.rb:26
-     1.3: AccountNumber#initialize         lib/account_number.rb:14
+    53.5: AccountNumber total
+    17.9: AccountNumber#extract_account_number lib/account_number.rb:21
+    15.3: AccountNumber#checksum           lib/account_number.rb:41
+     9.5: AccountNumber::break_line_into_pieces_of_digit lib/account_number.rb:35
+     5.1: AccountNumber#none
+     4.5: AccountNumber#valid?             lib/account_number.rb:29
+     1.3: AccountNumber#initialize         lib/account_number.rb:17
 
     24.0: ConversionConstants total
     24.0: ConversionConstants#none
