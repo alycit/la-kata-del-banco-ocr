@@ -1,0 +1,8 @@
+lib/account_number.rb -- 4 warnings:
+  AccountNumber has no descriptive comment (IrresponsibleModule)
+  AccountNumber#break_line_into_pieces_of_digit doesn't depend on instance state (UtilityFunction)
+  AccountNumber#break_line_into_pieces_of_digit refers to broken_line more than self (FeatureEnvy)
+  AccountNumber#break_line_into_pieces_of_digit refers to line more than self (FeatureEnvy)
+lib/conversion_constants.rb -- 0 warnings
+lib/ocr.rb -- 1 warning:
+  Ocr has no descriptive comment (IrresponsibleModule)
