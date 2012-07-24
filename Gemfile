@@ -1,0 +1,7 @@
+source "http://rubygems.org"
+gem "flay"
+gem "flog"
+gem "roodi"
+gem "reek"
+gem "rspec"
+gem "simplecov"
